@@ -1,0 +1,149 @@
+/* -------------------------
+   Popup Overlay
+-------------------------- */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+/* -------------------------
+   Popup Box (the actual popup content)
+-------------------------- */
+.popup-box {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 0px;
+  position: absolute;
+  width: 370px;
+  height: 326px;
+  left: 50%;
+  top: 85px;
+  transform: translateX(-50%);
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-shadow: 0px 0px 4px rgba(20, 20, 20, 0.1), 0px 8px 15px rgba(20, 20, 20, 0.12);
+  border-radius: 6px;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.popup-box hr {
+  width: calc(100% - 30px);
+  height: 0;
+  margin: 10px 15px;
+  padding: 0;
+  border: none;
+  border-top: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  flex: none;
+  flex-grow: 0;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.popup-box .option-row {
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.popup-box .btn {
+  margin: 0 15px 15px 15px;
+  width: calc(100% - 30px);
+  align-self: stretch;
+  flex-shrink: 0;
+}
+
+/* Thank You Popup specific styles */
+.popup-box.thank-you-popup {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.popup-box.thank-you-popup h3 {
+  margin: 0 15px 15px 15px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1F2128;
+}
+
+.popup-box.thank-you-popup p {
+  margin: 0 15px 20px 15px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1F2128;
+}
+
+/* -------------------------
+   Pages Popup Container
+-------------------------- */
+.pages-popup {
+    width: 370px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-radius: 6px;
+    box-shadow: 
+      0px 0px 4px rgba(20, 20, 20, 0.1),
+      0px 8px 15px rgba(20, 20, 20, 0.12);
+    
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    overflow: hidden;
+  }
+  
+  
+  /* -------------------------
+     Header
+  -------------------------- */
+  .pages-popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px 8px 22px;
+    height: 42px;
+    cursor: pointer;
+    background: #FFFFFF;
+  }
+  
+  
+  /* -------------------------
+     Divider Line
+  -------------------------- */
+  .pages-popup-divider {
+    width: 100%;
+    height: 1px;
+    background: #CDCDCD;
+    margin: 10px 0;
+  }
+  
+  
+  /* -------------------------
+     Scrollable Options List
+  -------------------------- */
+  .pages-popup-list {
+    max-height: 170px;
+    overflow-y: auto;
+    background: #FFFFFF;
+  }
+  
+  
+  /* -------------------------
+     Bottom Section (button wrapper)
+  -------------------------- */
+  .pages-popup-footer {
+    padding: 10px 15px;
+    background: #FFFFFF;
+  }
+  

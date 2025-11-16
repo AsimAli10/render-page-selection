@@ -1,0 +1,32 @@
+.btn {
+    width: 340px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #1F2128;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+  
+  /* Figma Variants */
+  .btn.default {
+    background: #FFCE22;
+  }
+  
+  .btn.variant2 {
+    background: #FFD84D;
+  }
+  
+  .btn.variant3 {
+    background: #FFCE22;
+  }
+  
